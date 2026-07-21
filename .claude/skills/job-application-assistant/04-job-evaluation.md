@@ -95,11 +95,22 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- **Domain shift:** Move away from commerce/e-commerce; interested in frontier tech, consumer-facing tech, and deep tech
-- **Role direction:** Stay on product/strategy side rather than pivoting into hands-on technical engineering
-- **Company stage:** Prefer early-stage (Series A/B), 0→1 environments where ownership matters most; interested in what's next after the product you build has product-market fit
-- **IIT presence (0–3)**: 0 no signal found · 1 some alumni on team · 2 alumni in leadership · 3 IIT founder(s) or YC type backed, plus alumni across the team. "Not found" scores 0 but is marked unverified broad level company search first/web-searchable.
-- **Product space modifier**: +8 non-transactional consumer / behavioral psych-econ / applied research · 0 other · −5 e-commerce or highly transactional. Applied after weighting, kept separate from company_tier so both signals stay legible on the row (a company can be Tier 3 funding and −5 product space, visibly).
+- **Domain shift:** Explicitly moving AWAY from ONDC and transactional commerce; targeting frontier tech (AI/LLMs), deep tech (robotics, biotech, climate), and non-transactional consumer (social, content, behavior, wellness, edtech)
+- **Culture signal:** Strong preference for teams with IIT alumni at founder/leadership level OR across the team (predicts better product culture)
+- **Role direction:** Stay on product/strategy side; avoid hands-on technical engineering tracks
+- **Company stage:** Prefer early-stage (Series A/B), 0→1 environments where ownership and product autonomy are highest
+- **IIT presence (0–3) [IMPORTANT CULTURE SIGNAL]**: 
+- 0: No alumni visible
+- 1: Some alumni on team (engineers/product)
+- 2: Alumni in leadership (VPs, heads of product)
+- 3: IIT founder(s) OR founding team majority IIT AND recent hiring of IIT alumni across levels. This is a **strong positive signal** for product culture quality.
+
+**Product space modifier (affects career motivation score)**:
+- +8: Non-transactional consumer (social, content, behavior, wellness, edtech, creator economy) / frontier tech (AI/LLM) / deep tech (biotech, robotics, climate, space, defense) / behavioral psych-econ / applied research
+- 0: Other spaces (SaaS, B2B tools, infrastructure, etc.)
+- −5: Transactional/marketplace (e-commerce, payments, settlement, checkout, ONDC, high-churn). You're explicitly moving away from this.
+
+Both signals are **critical for this candidate's motivation** — strong product culture (IIT presence proxy) + space alignment matter more than funding tier alone.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
 - Tasks that energize: Building new products from zero, ambiguous problems, user research, navigating stakeholder disagreements, rapid iteration, shipping to learn

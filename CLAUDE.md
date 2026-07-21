@@ -21,8 +21,8 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **Languages:** English, Hindi, some German
 - **CV language:** English <!-- English unless your market expects otherwise; /setup asks -->
 
-- **Status:** Unemployed, doing personal projects
-- **LinkedIn headline:** "Product | IIT Kgp"
+- **Status:** Independent Product Builder, doing personal projects
+- **LinkedIn headline:** "Product | 0→1 launches | Frontier Tech"
 
 ### Education
 <!-- List your degrees, most recent first -->
@@ -31,17 +31,20 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Topics: Fundamental engineering, Molecular biology, Bioprocesses, and electives in Economics, and Entreneurship
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+<!-- Detailed in .claude/skills/job-application-assistant/01-candidate-profile.md -->
+- **Product Manager** (Sep 2024 - Present) - **DigiHaat, ONDC** (Delhi)
+  - Led 0→1 launch of consumer app: strategy, roadmap, MVP shipped
+  - Built Incentive Engine (INR 40-50L/month); 11% checkout conversion uplift
+  - Catalogue curation + settlement infrastructure; 8% operational error reduction
+- **Consultant** (Feb 2023 - Aug 2024) - **Ernst & Young** (Delhi)
+  - ONDC Governance: improved order confirmation from 70% to 96%
+  - Khojle.com 0→1 product: 7,000 avg orders/day in 6 months
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Product strategy, 0→1 launches, user research, cross-functional leadership
+- **Secondary:** Python, ReactJS, Figma (fluent but not production-level engineering)
+- **Domain:** Commerce/payments, ONDC, growth optimization, settlement infrastructure
+- **Software:** Jira, Linear, Figma, analytics platforms
 
 ### Certifications
 <!-- List relevant certifications with dates -->
@@ -56,27 +59,35 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - [AWARD_NAME] - [EVENT] ([YEAR])
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+<!-- Full assessment in .claude/skills/job-application-assistant/02-behavioral-profile.md -->
+- **Type:** INTJ-A (Architect) - 16personalities
+- **Strengths:** Ownership, strategic communication, learning from failure, intellectual curiosity
+- **Growth areas:** Hands-on technical depth, leadership at scale (5+ direct reports)
+- **Thrives in:** Ambiguity with autonomy, user-driven iteration, fast-moving teams
 
 ### What Excites You
 <!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building products from zero with ambiguous problems
+- User research and pivoting when data contradicts assumptions
+- Cross-functional leadership without formal authority
+- Rapid iteration and learning over endless planning
+- Intellectual rigor (systems thinking, strategy, research depth)
 
 ### Target Sectors
 <!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **Frontier tech:** AI/LLMs, generative AI, applied AI
+- **Deep tech:** Robotics, biotech, climate tech, defense, space, applied research commercialization
+- **Non-transactional consumer:** Social, content, behavior/engagement, wellness, edtech, creator economy (NOT e-commerce, NOT payments)
+- **Culture signal:** Strong IIT presence at founder/leadership level OR across the team (validates product-first thinking)
 
 ### Deal-breakers
 <!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- **ONDC ecosystem** - explicitly avoiding
+- **Highly Transactional/marketplace businesses** - e-commerce, payments, settlement, checkout optimization (high-churn environment)
+- **Roles requiring deep technical engineering** - Python/ReactJS specialist tracks
+- **Low product autonomy** - process-driven, top-down roadmaps, low ownership
+- **Maintenance-dominated work** - stable/mature products with incremental optimization only
+- **Large established bureaucracies** - entrenched processes, low velocity
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

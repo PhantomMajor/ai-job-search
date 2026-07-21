@@ -4,17 +4,19 @@
 
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Indian portals can be added via `/add-portal`. You do **not** need a matching `site:` line below for those CLIs to run.
 
 The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (your market's job boards):
+- **linkedin.com/jobs** - LinkedIn job listings (filter: India / Delhi); also covered by `linkedin-search` CLI
+- **freehir.io** - Indian job board; also covered by `freehire-search` CLI if installed
+- **Company career pages** - Direct searches for target companies
+
+Secondary (company career pages via Google):
+- Direct Google searches with `site:` filters for known target companies (Airbnb, Stripe, Figma, etc.)
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -23,53 +25,70 @@ Secondary (company career pages via Google):
 
 Queries are grouped by priority. Each query should be combined with your location terms (e.g. your city, region, or metro area) where the site supports it.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Frontier Tech + Deep Tech + Non-Transactional Consumer (IIT-founded or IIT-heavy)
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+Strongest career direction: non-transactional consumer, frontier tech, deep tech with strong IIT presence.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Product Manager" "AI" OR "LLM" OR "generative AI" India
+site:linkedin.com/jobs "Product Manager" "deep tech" OR "frontier tech" India
+site:linkedin.com/jobs "Product Manager" biotech OR "climate tech" OR "robotics" India
+site:linkedin.com/jobs "Product Manager" IIT India
+site:linkedin.com/jobs "Product" "IIT Bombay" OR "IIT Delhi" OR "IIT Kharagpur" India
+site:linkedin.com/jobs "Head of Product" "early-stage" India -ONDC -"e-commerce" -marketplace -transactional
+site:linkedin.com/jobs "Founding" "product" IIT India
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Non-Transactional Consumer (Social, Content, Behavior, Wellness - IIT presence)
 
-Adjacent roles you could pivot into.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+Consumer-facing but behavioral/engagement-focused, not transactional. Strong product culture.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Product Manager" "consumer" social OR content OR wellness OR edtech India
+site:linkedin.com/jobs "Product Manager" "creator" OR "creator economy" India
+site:linkedin.com/jobs "Product Manager" "community" India -ONDC -"e-commerce"
+site:linkedin.com/jobs "Product" India -ONDC -"e-commerce" -"transactional" -payment -settlement -checkout
+site:linkedin.com/jobs "IIT" founder OR leadership OR team India
 ```
+
+### Priority 3: VC-Backed / Series A-B Early Stage (Strong Product Culture)
+
+Early-stage (Series A/B) teams with founder-led product thinking.
+
+```
+site:linkedin.com/jobs "Product Manager" "Series A" OR "Series B" India
+site:linkedin.com/jobs "Founding" "product" India
+site:linkedin.com/jobs "0→1" product India
+site:linkedin.com/jobs "Head of Product" "early stage" India -ONDC -"e-commerce"
+```
+
+### Priority 4: Broader Exploration (Product-Centric Companies)
+
+Adjacent companies known for strong product culture.
+
+```
+site:linkedin.com/jobs "Product Manager" India site:stripe.com OR site:figma.com OR site:airbnb.com OR site:slack.com
+site:linkedin.com/jobs "Product Strategy" India
+site:linkedin.com/jobs "Consultant" "product" India
+```
+
+---
+
+## **EXPLICITLY EXCLUDE**
+
+Do NOT include in any search results:
+- ONDC or ONDC-ecosystem companies
+- E-commerce or marketplace platforms with a transactional focus
+- Highly process-driven, mature companies with low product autonomy
 
 ## Location Filter
 
 When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+- **Delhi** (preferred, home base)
+- **NCR region** (Gurgaon, Noida, Greater Noida - acceptable)
+- **Remote or hybrid with Delhi office** (acceptable)
+- **Other Indian metros** (acceptable with relocation consideration)
+- **International** (consider timezone overlap for async work)
 
 ## Date Filter
 
