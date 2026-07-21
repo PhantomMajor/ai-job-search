@@ -20,7 +20,7 @@ All CVs use the moderncv LaTeX package with the "banking" style and "blue" color
 cd cv && lualatex -interaction=nonstopmode main_<company>_<role>.tex
 ```
 
-Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on main_<company>_<role>.pdf`. Any page count other than 1 is a failure that must be fixed before presenting to the user.
 
 ## Document Structure
 
@@ -116,11 +116,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Product Manager / Product Strategy roles (0→1 and growth-stage):**
+> Product manager with 2+ years experience building 0→1 consumer and B2B platforms in high-growth commerce. Combining strategic product thinking, user research rigor, and technical fluency (Python, ReactJS). Proven ability to ship ambiguous problems end-to-end, from strategy through iteration, reporting directly to leadership. Comfortable navigating cross-functional teams and pivoting when data contradicts assumptions.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Commerce / Payments / FinTech roles:**
+> Product manager with deep expertise in ONDC (open commerce networks), payment settlement infrastructure, and growth optimization. Built from zero: DigiHaat's consumer app (5L MAU), Khojle.com (7k orders/day), and reconciliation systems handling INR 10L+/quarter. Experienced in designing systems for merchant compliance, payment flows, and reducing operational friction at scale.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
@@ -254,24 +254,3 @@ Cut the lowest-total-score line first, regardless of which section it sits in.
 - Do not mechanically cut from the bottom of a static section list without checking relevance. "Cut the oldest role first" is wrong if that role is literally about the skill the posting asks for.
 - Do not cut the one concrete example the cover letter leans on. Relevance is measured against the cover letter you wrote, not just the job posting — interviewers will have read both.
 - Do not cut to fit if the fit is borderline (2.02 pages). Prefer `\enlargethispage{2-3\baselineskip}` on a late section for near-misses; reserve content cuts for genuine overflow (content on page 3 that is more than a single trailing section).
-
-## Recommended Section Order
-
-The section order varies by role type:
-
-**For technical / data science / ML roles:**
-1. Profile statement / elevator pitch
-2. Core competencies / Skills
-3. Professional Experience (reverse chronological)
-4. Education (reverse chronological)
-5. Languages
-6. Publications & Awards
-7. References
-
-**For domain-specific / specialist roles:**
-1. Profile statement / elevator pitch
-2. Core competencies / Skills
-3. Education (reverse chronological) - credentials are a key qualifier
-4. Professional Experience (reverse chronological)
-5. Publications & Awards
-6. References

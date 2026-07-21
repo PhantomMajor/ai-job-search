@@ -44,9 +44,11 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Product strategy (0→1 launches, roadmapping, PWA architecture), commerce and payments (ONDC, settlement, reconciliation), growth optimization (checkout, conversion, coupon systems), user research and iteration, cross-functional leadership
+
+**Moderate match areas:** Python and ReactJS (fluent enough to specify and review, not production-level engineering), technical architecture (understands systems but not a systems architect), data analysis (used secondary KPIs, but not a data analyst)
+
+**Weak match areas:** Deep machine learning, DevOps/infrastructure, advanced backend systems, large-scale engineering leadership (5+ direct reports)
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -58,9 +60,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** E-Commerce, Marketplace/Platform Products, AI Products, Strategy Consulting
+**Moderate:** Payments and settlements, Logistics
+**Entry-level:** Biotechnology, Media, Social, Gaming, Consumer, Finance, Healthcare, Other
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -73,6 +75,8 @@ Does the role and company culture match the behavioral profile?
 | 0-39 | Significant culture mismatch |
 
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
+
+Also score (0-3): 0 red flags (layoffs, stale funding, shrinking space) · 1 early/unproven · 2 funded within ~24 months, credible investors, growing · 3 top-tier investors or profitable market leader. Purely about funding/stability — unrelated to product space. Normalise.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
 - Within commute range: PASS
@@ -91,19 +95,21 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- **Domain shift:** Move away from commerce/e-commerce; interested in frontier tech, consumer-facing tech, and deep tech
+- **Role direction:** Stay on product/strategy side rather than pivoting into hands-on technical engineering
+- **Company stage:** Prefer early-stage (Series A/B), 0→1 environments where ownership matters most; interested in what's next after the product you build has product-market fit
+- **IIT presence (0–3)**: 0 no signal found · 1 some alumni on team · 2 alumni in leadership · 3 IIT founder(s) or YC type backed, plus alumni across the team. "Not found" scores 0 but is marked unverified broad level company search first/web-searchable.
+- **Product space modifier**: +8 non-transactional consumer / behavioral psych-econ / applied research · 0 other · −5 e-commerce or highly transactional. Applied after weighting, kept separate from company_tier so both signals stay legible on the row (a company can be Tier 3 funding and −5 product space, visibly).
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: Building new products from zero, ambiguous problems, user research, navigating stakeholder disagreements, rapid iteration, shipping to learn
+- Tasks that drain: Maintenance work on stable products, purely process-driven roles, low agency/high process, managing large established teams with entrenched ways
+- Non-task factors: Leadership that encourages autonomy and rapid iteration; intellectual curiosity valued; fast-moving teams; clear user/data signals drive decisions
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: No current financial pressure; taking time to find next role that excites (projects ongoing)
+- **Flexibility**: No relocation constraints within India; no time/family constraints mentioned
+- **Professional development**: Strong interest in expanding domain knowledge (currently in commerce/payments; wants frontier/deep tech exposure)
 
 ### 6. Salary Benchmark (Optional)
 
@@ -164,10 +170,10 @@ Present the evaluation as:
 ```
 
 ## Weighting
-- Technical Skills: 30%
-- Experience Match: 25%
+- Technical Skills: 20%
+- Experience Match: 20%
 - Behavioral Fit: 15%
-- Career Alignment: 30%
+- Career Alignment: 45%
 
 (Location is pass/fail, not weighted)
 
